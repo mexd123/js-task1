@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var number1 = "46";
+		var number2 = "4";
+		var result = parseInt(number1) + parseInt(number2);
+		console.log(result); // 50
+	</script>
+	<script>
+		var number3 = "46.07";
+		var number4 = "4.98";
+		var result1 = parseFloat(number3) + parseFloat(number4);
+		console.log(result1); //51.05
+	</script>
+	<script>
+		var num1 = "123hello";
+		var num2 = parseInt(num1);
+		console.log(num2); // 123
+	</script>
+	<script>
+		console.log(parseInt("abc"));   // NaN
+		var type = typeof NaN;
+		console.log(type);              // number
+	</script>
+	<script>
+		var num1 = "javascript";
+		var num2 = "22";
+		var result = isNaN(num1);
+		console.log(result); // true - num1 не является числом
+		     
+		result = isNaN(num2);
+		console.log(result); //  false - num2 - это число
+	</script>
+	<script >
+		var num1 = "110";
+		var num2 = parseInt(num1, 2);
+		console.log(num2); // 6
+	</script>
+</body>
+</html>

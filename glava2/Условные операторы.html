@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		const a = 1;
+		const b = 2;
+		const result = a < b ? a: b;
+		console.log(result); // 1
+	</script>
+	<script>
+		const a1 = 1;
+		const b1 = 2;
+		const result1 = a1 < b1 ? a1 + b1 : a1 - b1;
+		console.log(result1); // 3
+	</script>
+	<script>
+		const result2 = "hello" ?? "world";
+		console.log(result2);   // hello
+ 
+		const result3 = 0 ?? 5;
+		console.log(result3);   // 0
+ 
+		const result4 = "" ?? "javascript";
+		console.log(result4);   // "" - пустая строка
+		 
+		const result5 = false ?? true;
+		console.log(result5);   // false
+		 
+		const result6 = null ?? "not null";
+		console.log(result6);   // not null
+		 
+		const result7 = undefined ?? "defined";
+		console.log(result7);   // defined
+		 
+		let message8 = null;
+		const hello8 = "Hi JavaScript";
+		const result8 = message8 ?? hello8;
+		console.log(result8);   // Hi JavaScript
+	</script>
+	<script>
+		let message9 = "Welcome to JavaScript";
+		let text9 = "Hello work!"
+		text9 ??= message9;
+		console.log(text9);  // Hello work!
+	</script>
+	<script>
+		let message10 = "Welcome to JavaScript";
+		let text10 = null;
+		text10 ??= message10;
+		console.log(text10);  // Welcome to JavaScript
+	</script>
+</body>
+</html>

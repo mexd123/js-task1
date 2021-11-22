@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function hello(){
+    	console.log("Hello Metanit.com");
+}
+hello()
+const message = hello
+message()
+	</script>
+	<script>
+		function goodMorning(){
+    	console.log("Доброе утро");
+		}
+		function goodEvening(){
+		    console.log("Добрый вечер");
+		}
+		let message1 = goodMorning;      // присваиваем переменной message функцию goodMorning
+		message1();      // Доброе утро
+		message1 = goodEvening;          // меняем функцию в переменной message
+		message1();      // Добрый вечер
+	</script>
+	<script>
+		let message2 = function(){
+    	console.log("Hello JavaScript");
+}
+message();
+	</script>
+</body>
+</html>		

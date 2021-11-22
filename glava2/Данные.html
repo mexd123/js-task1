@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script> //все задания этой главы я записал в один документ 
+		let num = 9007199254740991n
+		console.log(num);       // 9007199254740991
+		console.log(num + 1n);   // 9007199254740992
+		console.log(num + 2n);   // 9007199254740992
+		console.log(num + 3n);
+		let isAlive = true;
+		let isDead = false;
+		let user = "Tom";
+		let company = 'Microsoft';
+		let language = `JavaScript`;
+		 
+		console.log(user);
+		console.log(company);
+		console.log(language);
+		let company1 = "Бюро 'Рога и копыта'";
+		alert(company1)
+	</script>
+	<script>
+		let user1 = "Tom";
+		let text1 = `Name: ${user1}`;
+		console.log(text1);  // Name: Tom
+		let user2 = "Tom";
+		let age = 37;
+		let isMarried = false;
+		let text2 = `Name: ${user1}   Age: ${age}   IsMarried: ${isMarried}`;
+		console.log(text2);  // Name: Tom   Age: 37   IsMarried: false
+	</script>
+	<script>
+		let isAlive1;
+		console.log(isAlive1); // выведет undefined
+		let isAlive2;
+		console.log(isAlive2); // undefined
+		isAlive2 = null;
+		console.log(isAlive2); // null
+		isAlive2 = undefined;  // снова установим тип undefined
+		console.log(isAlive2); // undefined
+	</script>
+	<script>
+		const user3 = {name3: "Tom", age:24};
+		console.log(user3.name3);
+	</script>
+	<script >
+		let id;  // тип undefined
+		console.log(id);
+		id = 45;  // тип number
+		console.log(id);
+		id = "45"; // тип string
+		console.log(id);
+	</script>
+	<script>
+		let a = 45;  // тип number
+		let b = a + 5;
+		console.log(b); // 50
+		     
+		a = "45"; // тип string
+		let c = a + 5
+		console.log(c); // 455
+	</script>
+	<script>
+		let id1;
+		console.log(typeof id1);       // undefined
+		id1 = 45;
+		console.log(typeof id1);   // number
+		id1 = 45n;
+		console.log(typeof id1);     // bigint 
+		id1 = "45";
+		console.log(typeof id1);     // string
+	</script>
+
+</body>
+</html>

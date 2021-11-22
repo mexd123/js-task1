@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script >
+		let x1 = 10;
+		let y1 = x1 + 50;
+	</script>
+	<script>
+		let x2 = 100;
+		let y2 = x2 - 50;
+	</script>
+	<script>
+		let x3 = 4;
+		let y3 = 5;
+		let z3 = x3 * y3;
+	</script>
+	<script>
+		let x4 = 5;
+		let y4 = 2;
+		let z4 = x4 / y4;
+		console.log(z4); // 2.5
+	</script>
+	<script>
+		const n5 = 2 ** 3;
+		console.log(n5);  // 8 
+		const x5 = 3;
+		const y5 = 2;
+		const z5 = x5 ** y5;
+		console.log(z5);  // 9
+	</script>
+	<script>
+		// префиксный инкремент
+		let x6 = 5;
+		let z6 = ++x6;
+		console.log(x6); // 6
+		console.log(z6); // 6
+		     
+		// постфиксный инкремент
+		let a6 = 5;
+		let b6 = a6++;
+		console.log(a6); // 6
+		console.log(b6); // 5
+	</script>
+	<script>
+		// префиксный декремент
+		let x7 = 5;
+		let z7 = --x7;
+		console.log(x7); // 4
+		console.log(z7); // 4
+		     
+		// постфиксный декремент
+		let a7 = 5;
+		let b7 = a7--;
+		console.log(a7); // 4
+		console.log(b7); // 5
+	</script>
+	<script>
+		let x8 = 10;
+		let y8 = 5 + (6 - 2) * --x8;
+		console.log(y8); //41
+	</script>
+	<script>
+		let income = 100;
+		let strIncome = "100";
+		let result = income == strIncome;
+		console.log(result); //true
+	</script>
+	<script>
+		let income1 = 100;
+		let percent1 = 10;
+		let result1 = income1 > 50 && percent1 < 12;
+		console.log(result1); //true
+	</script>
+	<script>
+		let income2 = 100;
+		let isDeposit2 = true;
+		let result2 = income2 > 50 || isDeposit2 == true;
+		console.log(result2); //true
+	</script>
+	<script>
+		let income3 = 100;
+		let result3 = !(income3 > 50);
+		console.log(result3); // false, так как income > 50 возвращает true
+ 
+		let isDeposit4 = false;
+		let result4 = !isDeposit4;
+		console.log(result4); // true
+	</script>
+
+	<script>
+		let a1 = 23;
+		a1 += 5; // аналогично a = a + 5
+		console.log(a1); // 28
+
+		let a2 = 28;
+		a2 -= 10; // аналогично a = a - 10
+		console.log(a2); // 18
+
+		let x = 20;
+		x *= 2; // аналогично x = x * 2
+		console.log(x); // 40
+
+		let Y = 5;
+		Y **= 2;
+		console.log(Y);  // 25
+
+		let Z = 40;
+		Z /= 4; // аналогично x = x / 4
+		console.log(Z); // 10
+
+		let U = 10;
+		U %= 3; // аналогично x = x % 3
+		console.log(U); // 1, так как 10 - 3*3 = 1
+	</script>
+	<script>
+		let x = true;
+		let y = false;
+		y &&= x;
+		console.log(y); // false
+		 
+		let c = false;
+		let d = true;
+		c &&= d;
+		console.log(c); // false
+		 
+		let a = true;
+		let b = true;
+		a &&= b;
+		console.log(a); // true
+		 
+		let e = false;
+		let f = false;
+		e &&= f;
+		console.log(e); // false
+	</script>
+	<script>
+		let x = true;
+		let y = false;
+		y ||= x;
+		console.log(y); // true
+		 
+		let a = true;
+		let b = true;
+		a ||= b;
+		console.log(a); // true
+		 
+		let c = false;
+		let d = true;
+		c ||= d;
+		console.log(c); // true
+		 
+		let e = false;
+		let f = false;
+		e ||= f;
+		console.log(e); // false
+	</script>
+</body>
+</html>	
